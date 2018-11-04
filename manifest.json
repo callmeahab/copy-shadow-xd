@@ -1,0 +1,42 @@
+{
+    "id": "a3f0342c",
+    "name": "Copy Paste Shadow",
+    "version": "0.0.1",
+    "description": "Copy and Paste shadow from one layer to another layer or group of layer inside Adobe XD",
+    "icons": [
+        { "width": 96, "height": 96, "path": "icon.png" }
+    ],
+    "main": "main.js",
+    "host": {
+        "app": "XD",
+        "minVersion": "13.0.0"
+    },
+    "uiEntryPoints": [{
+        "type": "menu",
+        "label": "Copy Paste Shadow",
+        "menuItems": [{
+                "type": "menu",
+                "label": {
+                    "default": "Copy Shadow"
+                },
+                "commandId": "copyShadow",
+                "shortcut": {
+                    "mac": "Cmd+Shift+X",
+                    "win": "Ctrl+Alt+B"
+                }
+            },
+            {
+                "type": "menu",
+                "label": {
+                    "default": "Paste Shadow"
+                },
+                "commandId": "pasteShadow",
+                "shortcut": {
+                    "mac": "Cmd+Shift+V",
+                    "win": "Ctrl+Alt+Shift+B"
+                }
+            }
+        ]
+    }]
+}
+
